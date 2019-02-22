@@ -1,13 +1,20 @@
-const navContainer = document.querySelector('.nav-container')
+const menu = document.querySelector('.menu-container')
 
-navContainer.addEventListener('click', navFunction);
+menu.addEventListener('click', navFunction);
 
 function navFunction() {
     toggleClasses();
 }
 
 function toggleClasses() {
-    let navOverlay = navContainer.childNodes[3]
+    const menuWrapper = document.querySelector('.menu-wrapper');
+    const navOverlay = document.querySelector('.nav-overlay');
+    const navItems = document.querySelector('.nav-container');
+
     navOverlay.classList.toggle('expand');
-    console.log(navContainer.childNodes[3]);
+    menuWrapper.classList.toggle('active');
+    navItems.classList.toggle('active');
+
+
+    // console.log(navContainer.childNodes[3]);
 }
