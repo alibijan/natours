@@ -33,6 +33,52 @@ h1 {
 
 
 
+/* logo */
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.logo {
+    height: 35px;
+}
+
+
+
+/* main menu */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: #fff;
+    cursor: pointer;
+
+    position: absolute;
+    top: 35px;
+    right: 40px;
+
+    width: 60px;
+    height: 60px;
+}
+.nav-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 30%;
+}
+.menu-line {
+    background: #000;
+    display: block;
+    width: 30px;
+    height: 2px;
+}
+
+
+
+
+
+/* banner */
 .header {
     height: calc(100vh - 60px); /* full height - (border top + border bottom) */
     background-image: linear-gradient(
@@ -48,15 +94,6 @@ h1 {
 
     /* arrow clip path for fun */
     /* clip-path: polygon(0 25%, 75% 25%, 75% 0, 100% 50%, 75% 100%, 75% 75%, 0 75%); */
-}
-
-.logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-.logo {
-    height: 35px;
 }
 
 .text-box {
@@ -87,6 +124,9 @@ h1 {
     animation: moveInRight 1s ease-out;
 }
 
+
+
+/* Button */
 .btn:link,
 .btn:visited {
     color: #777;
